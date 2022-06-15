@@ -28,8 +28,16 @@ flows:
     config_qa:
         steps:
             3:
+                task: assign_permission_sets
+                options:
+                    api_names: "Food_Bank"
+            4:
                 task: load_dataset
     config_dev:
         steps:
             3:
+                task: assign_permission_sets
+                options:
+                    api_names: "Food_Bank"
+            4:
                 task: load_dataset
